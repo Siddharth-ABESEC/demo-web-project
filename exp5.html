@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+
+<body>
+  <fieldset>
+    <h2 style="text-align: center;">Student Registration Form</h2>
+    <hr>
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <br><br>
+
+        <label for="password">Set Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Other</label>
+        <br><br>
+
+        <label for="course">Choose Your Course:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select a Course --</option>
+          <option value="btech">Bachelor of Technology (B.Tech)</option>
+          <option value="bba">Bachelor of Business Administration (BBA)</option>
+          <option value="mba">Master of Business Administration (MBA)</option>
+          <option value="bca">Bachelor of Computer Applications (BCA)</option>
+          <option value="mca">Master of Computer Applications (MCA)</option>
+        </select>
+        <br><br>
+
+        <label for="address">Home Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="60" placeholder="Enter your complete address"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+
+    <hr>
+    <footer style="text-align: center;">
+      &copy; 2025 Student Registration Portal — All Rights Reserved
+    </footer>
+  </fieldset>
+</body>
+
+</html>
